@@ -95,9 +95,9 @@ export default function Photos(props) {
         />
         <meta property={'og:title'} content={'Фото'} key={'og:title'}/>
         {/*добавляем open graph превью для SEO. Подробности в www.ogp.me */}
-        <meta property={'og:url'} content={'spastrak.ru/photos'} key={'og:url'}/>
+        <meta property={'og:url'} content={'spastruck.ru/photos'} key={'og:url'}/>
         {/*добавляем ссылку на страницу сайта */}
-        <link rel={'canonical'} key={'canonical'} href={'spastrak.ru/photos'}/>
+        <link rel={'canonical'} key={'canonical'} href={'spastruck.ru/photos'}/>
         {/*дефолтный главный адрес страницы. Зависит от настроек DNS*/}
       </Head>
 

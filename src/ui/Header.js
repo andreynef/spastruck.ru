@@ -4,10 +4,6 @@ import {useScrollTrigger} from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import {makeStyles} from "@material-ui/styles";
 import Button from "@material-ui/core/Button";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
 import useTheme from "@material-ui/core/styles/useTheme";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
@@ -16,7 +12,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import Hidden from "@material-ui/core/Hidden";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Link from "./Link";
@@ -316,12 +311,12 @@ export default function Header(props) {
         <AppBar position={"sticky"} color={"primary"} className={classes.appBar}>{/*шапка*/}
           <Toolbar disableGutters>{/*тож шапка*/}
             <Grid item className={classes.stickyBoardContainer}>
-              <Grid container direction={'column'} alignItems={'center'} style={{padding:'1em'}}>
+              <Grid container direction={'column'} alignItems={matchesXS?'left':'center'} style={{padding:'1em'}}>
                 <Grid item>
-                  <Typography variant={'h2'} align={'center'} style={{fontSize:'2rem', color:'white'}}>
-                    <img alt={'company logo'} src={'/assets/telephoneWhite.svg'} style={{width:25, height:25, marginRight :20}} />
-                    <a href={'tel: 89821235062'} style={{textDecoration: 'none', color:'white'}}>+7(982)123-50-62</a>
-                    <span style={{position:'absolute', top:0,right:'1em'}}>{drawer}</span>
+                  <Typography variant={'h2'} align={'center'} style={{fontSize:matchesXS?'1.2rem':'2rem', color:'white', padding:matchesXS?'0.5em 0':'unset'}}>
+                    <img alt={'company logo'} src={'/assets/telephoneWhite.svg'} style={{width:matchesXS?15:25, height:matchesXS?15:25, marginRight :10}} />
+                    <a href={'tel: 89821235062'} style={{textDecoration: 'none', color:'white', paddingRight:matchesXS?'3em':'unset'}}>+7(982)123-50-62</a>
+                    <span style={{position:'absolute', top:0,right:matchesXS?'0':'1em'}}>{drawer}</span>
                   </Typography>
                 </Grid>
               </Grid>

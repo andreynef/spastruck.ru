@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   firstContainer: {
     padding:'3em 5em',
     backgroundColor: '#fafafa',
-    backgroundImage: `url('/assets/add.jpg')`,
+    backgroundImage: `url('/assets/f33.jpg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     // backgroundAttachment: 'fixed',//фикс картинка при прокрутке
@@ -46,7 +46,6 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     [theme.breakpoints.down('md')]: {
       padding: '2em 2em',
-      backgroundPosition: 'left',
     },
   },
   vehicleContainer: {
@@ -89,8 +88,8 @@ export default function Index(props) {
           key={'description'}
           content={'Эвакуатор в Ижевске'}
         />
-        <meta property={'og:title'} content={'Эвакуатор в Ижевске | Towtruck18'} key={'og:title'}/>{/*добавляем open graph превью для SEO. Подробности в www.ogp.me */}
-        <meta property={'og:url'} content={'towTruck18.ru/'} key={'og:url'}/>{/*добавляем ссылку на страницу сайта */}
+        <meta property={'og:title'} content={'Служба эвакуации в Ижевске | СпасТрак'} key={'og:title'}/>{/*добавляем open graph превью для SEO. Подробности в www.ogp.me */}
+        <meta property={'og:url'} content={'spastruck.ru/'} key={'og:url'}/>{/*добавляем ссылку на страницу сайта */}
         <link rel={'canonical'} key={'canonical'} href={'spastruck.ru/'}/>{/*дефолтный главный адрес страницы. Зависит от настроек DNS*/}
 
       </Head>

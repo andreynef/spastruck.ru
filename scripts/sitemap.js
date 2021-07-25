@@ -4,7 +4,7 @@ const formatDate = require("./formatDate");
 
 // ROBOTS.txt
 const robotsTxt = `User-agent: *
-Sitemap: https://spastrak.ru/sitemap_local.xml
+Sitemap: https://spastruck.ru/sitemap_local.xml
 Disallow:`;//те сайты кот не хотим чтобы они находились.
 
 fs.writeFileSync("public/robots.txt", robotsTxt);
@@ -22,8 +22,8 @@ const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
       path => `<url>
     ${
       path === "/index"
-        ? `<loc>https://towtruck18.ru</loc>`
-        : `<loc>https://towtruck18.ru${path}</loc>`
+        ? `<loc>https://spastruck.ru</loc>`
+        : `<loc>https://spastruck.ru${path}</loc>`
     }
     <lastmod>${
       pathsObj[path].lastModified
