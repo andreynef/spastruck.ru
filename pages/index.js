@@ -109,7 +109,7 @@ export default function Index(props) {
             variant={'contained'}
             className={classes.firstButton}
             component={'a'}
-            href={'tel: 89048350675'}
+            href={'tel: 89821235062'}
           >
             Позвонить
             <img alt={'company logo'} src={'/assets/telephoneWhite.svg'} style={{width:25, height:25, marginLeft:20}} />
