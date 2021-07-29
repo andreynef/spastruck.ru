@@ -11,8 +11,6 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: 'rgba(0,0,0,0.9)',
     padding: '20px 0',
     width: '100%',
-    // zIndex: 1302,//как и в header'e чтоб футер был над меню дровера
-    // position: 'relative',
   },
 
 }));
@@ -24,11 +22,11 @@ export default function Footer(props) {
 
   return (
     <footer className={classes.footer}>
-      <Grid container justify={'center'} >
+      <Grid container justifyContent={'center'} >
         <Grid item>
           <Typography variant={'body1'} align={'center'} style={{color: theme.palette.common.blue, fontSize: '1rem'}}>
             {/*<a href={'tel: 89048350675'} style={{textDecoration: 'none', color:'black'}}>8(904)835-0675</a>*/}
-            <span style={{textDecoration: 'none', color:'white'}}>8(982)123-5062</span>
+            <span style={{color:'white'}}>8(982)123-5062</span>
           </Typography>
           <Typography align={'center'} style={{color: 'white', fontSize: matchesXS?'0.7rem':'0.8rem'}}>
             НПД Шадрин Г.А.

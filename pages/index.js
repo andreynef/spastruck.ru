@@ -81,12 +81,12 @@ export default function Index(props) {
     <Grid container direction={'column'} className={classes.mainContainer}>
       <Head>
         <title key={'title'}>
-          Служба эвакуации в Ижевске | СпасТрак
+          Служба эвакуации в Ижевске | SpasTruck
         </title>
         <meta
           name={'description'}
           key={'description'}
-          content={'Эвакуатор в Ижевске'}
+          content={'Служба эвакуации в Ижевске'}
         />
         <meta property={'og:title'} content={'Служба эвакуации в Ижевске | СпасТрак'} key={'og:title'}/>{/*добавляем open graph превью для SEO. Подробности в www.ogp.me */}
         <meta property={'og:url'} content={'spastruck.ru/'} key={'og:url'}/>{/*добавляем ссылку на страницу сайта */}
@@ -133,7 +133,7 @@ export default function Index(props) {
             </Typography>
           </Grid>
           <Grid item>
-            <Grid item container justify={'space-around'}>
+            <Grid item container justifyContent={'space-around'}>
               <Grid item className={classes.textContainer}>
                 <Typography variant={'subtitle1'} style={{fontSize: matchesSM? '1rem':null, color:'black'}}>
                   - Легковые авто <span style={{fontWeight: 700}}>от 1300р.</span><br/>

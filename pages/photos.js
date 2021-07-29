@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {makeStyles, useTheme} from "@material-ui/core/styles";
+import React from 'react';
+import {makeStyles} from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import 'date-fns';
 import Head from "next/head";
@@ -86,7 +86,7 @@ export default function Photos(props) {
     <>
       <Head>
         <title key={'title'}>
-          фото | СпасТрак
+          фото | spasTruck
         </title>
         <meta
           name={'description'}
@@ -101,7 +101,7 @@ export default function Photos(props) {
         {/*дефолтный главный адрес страницы. Зависит от настроек DNS*/}
       </Head>
 
-      <Grid container alignItems={'center'} justify={'space-evenly'} className={classes.quoteContainer}>
+      <Grid container alignItems={'center'} justifyContent={'space-evenly'} className={classes.quoteContainer}>
         <img alt={'photo'} src={'/assets/f1.jpg'} className={classes.img}/>
         <img alt={'photo'} src={'/assets/f2.jpg'} className={classes.img}/>
         <img alt={'photo'} src={'/assets/f3.jpg'} className={classes.img}/>

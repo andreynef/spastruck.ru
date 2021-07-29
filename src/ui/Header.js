@@ -259,10 +259,10 @@ export default function Header(props) {
                 props.setValue(route.activeIndex)
               }}
               selected={props.value === route.activeIndex}//проп завода
-              classes={route.link==='/quote' ? {root: classes.drawerItemEstimate, selected: classes.drawerItemSelected}:{selected: classes.drawerItemSelected}}//есть в Mui атрибут selected кот take this logic behind the scene.
+              classes={{selected: classes.drawerItemSelected}}//есть в Mui атрибут selected кот take this logic behind the scene.
             >
               <ListItemText
-                className={route.link==='/quote' ? classes.drawerItemQuote : classes.drawerItem}
+                className={classes.drawerItem}
                 disableTypography
               >
                 {route.name}

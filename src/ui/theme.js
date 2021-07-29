@@ -1,4 +1,4 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 
 //some my custom variables
 
@@ -7,7 +7,7 @@ const arcOrange = '#1E90FF';
 const arcGrey = '#868686';
 const fon = '#FFC62A';
 
-const theme = createMuiTheme({
+const theme = createTheme({
 //  my options here. Default theme can be seen there : -> https://material-ui.com/customization/default-theme/#default-theme
   palette: {
     common: {
